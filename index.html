@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Salt Hair Care - Premium Natural Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 smooth-scroll">
+    
+    <!-- Language Switch Notification -->
+    <div id="languageNotification" class="language-notification">
+        <div class="notification-content">
+            <div class="notification-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L22 7L12 12L2 7L12 2Z"/>
+                    <path d="M2 17L12 22L22 17"/>
+                    <path d="M2 12L12 17L22 12"/>
+                </svg>
+            </div>
+            <div class="notification-text">
+                <span id="notificationMessage">Language switched</span>
+            </div>
+        </div>
+        <div class="notification-progress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gradient">Sea Salt</div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    
+                    <button class="header-language-toggle" onclick="toggleLanguage()" title="Toggle Language">
+                        <span class="en-text">AR</span>
+                        <span class="ar-text hidden">EN</span>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center space-x-4">
+                    <button class="header-language-toggle" onclick="toggleLanguage()" title="Toggle Language">
+                        <span class="en-text">AR</span>
+                        <span class="ar-text hidden">EN</span>
+                    </button>
+                    <button>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 loading-animation language-transition" data-en="Natural Hair Care" data-ar="العناية الطبيعية بالشعر">
+                Natural Hair Care
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto loading-animation stagger-1 language-transition" data-en="Discover the power of the sea with our premium collection of natural hair care products" data-ar="اكتشف قوة البحر مع مجموعتنا المميزة من منتجات العناية الطبيعية بالشعر">
+                Discover the power of the sea with our premium collection of natural hair care products
+            </p>
+            <div class="loading-animation stagger-2">
+                <a href="#products" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors language-transition" data-en="Explore Products" data-ar="استكشف المنتجات">
+                    Explore Products
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 floating">
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 fade-in" data-en="Our Products" data-ar="منتجاتنا">Our Products</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto fade-in" data-en="Experience the transformative power of natural ingredients with our carefully crafted hair care collection" data-ar="اختبر القوة التحويلية للمكونات الطبيعية مع مجموعة العناية بالشعر المصنوعة بعناية">
+                    Experience the transformative power of natural ingredients with our carefully crafted hair care collection
+                </p>
+            </div>
+
+            <!-- Sea Salt Spray -->
+            <div class="mb-20 fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4" data-en="Sea Salt Spray" data-ar="سبراي ملح البحر">Sea Salt Spray</h3>
+                        <p class="text-lg text-gray-600 mb-6" data-en="Create effortless beach waves with our mineral-rich sea salt spray that adds natural volume and texture." data-ar="اعمل تموجات شاطئية طبيعية مع سبراي ملح البحر الغني بالمعادن اللي بيضيف حجم وملمس طبيعي.">
+                            Create effortless beach waves with our mineral-rich sea salt spray that adds natural volume and texture.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="How to Use" data-ar="طريقة الاستخدام">How to Use</h4>
+                                <p class="text-gray-600" data-en="Spray evenly on damp or dry hair. Scrunch or style with your fingers for natural texture. Let it air dry or use a diffuser for extra volume." data-ar="رش على شعر رطب أو جاف، وزع بيدك أو اعمل &quot;scrunch&quot; لحتى يطلعلك Texture طبيعي. فيك تخليه ينشف عالهوا أو تستعمل مجفف بديفيوزر لزيادة الحجم.">
+                                    Spray evenly on damp or dry hair. Scrunch or style with your fingers for natural texture. Let it air dry or use a diffuser for extra volume.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="What It Does" data-ar="الفوائد">What It Does</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• Adds natural volume and lift" data-ar="• بيعطي حجم طبيعي ورفع للشعر">• Adds natural volume and lift</li>
+                                    <li data-en="• Creates raw, beach-style texture" data-ar="• بيعمل Texture عفوي وستايل شاطئ">• Creates raw, beach-style texture</li>
+                                    <li data-en="• Helps balance scalp with essential minerals" data-ar="• المعادن بتوازن فروة الرأس وبتقوي الشعر">• Helps balance scalp with essential minerals</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="Key Ingredients" data-ar="المكونات الرئيسية">Key Ingredients</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• <strong>Dead Sea Minerals:</strong> Strengthen hair fibers, improve scalp health" data-ar="• <strong>معادن البحر الميت:</strong> بتقوي ألياف الشعر وبتحسّن صحة الفروة">• <strong>Dead Sea Minerals:</strong> Strengthen hair fibers, improve scalp health</li>
+                                    <li data-en="• <strong>Magnesium & Calcium:</strong> Support natural shine and elasticity" data-ar="• <strong>مغنيسيوم + كالسيوم:</strong> بيعززوا اللمعة والمرونة">• <strong>Magnesium & Calcium:</strong> Support natural shine and elasticity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="image-slider" data-slider="spray">
+                            <div class="slider-container">
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0001.jpg" alt="Sea Salt Spray - View 1">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0002.jpg" alt="Sea Salt Spray - View 2">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0005.jpg" alt="Sea Salt Spray - View 3">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0006.jpg" alt="Sea Salt Spray - View 4">
+                                </div>
+                            </div>
+                            <button class="slider-nav prev" onclick="moveSlide('spray', -1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="slider-nav next" onclick="moveSlide('spray', 1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="slider-dot active" onclick="currentSlide('spray', 1)"></span>
+                                <span class="slider-dot" onclick="currentSlide('spray', 2)"></span>
+                                <span class="slider-dot" onclick="currentSlide('spray', 3)"></span>
+                                <span class="slider-dot" onclick="currentSlide('spray', 4)"></span>
+                            </div>
+                            <div class="slider-progress" data-progress="spray"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shampoo -->
+            <div class="mb-20 fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="image-slider" data-slider="shampoo">
+                            <div class="slider-container">
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0002.jpg" alt="Shampoo - View 1">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0003.jpg" alt="Shampoo - View 2">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0007.jpg" alt="Shampoo - View 3">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0008.jpg" alt="Shampoo - View 4">
+                                </div>
+                            </div>
+                            <button class="slider-nav prev" onclick="moveSlide('shampoo', -1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="slider-nav next" onclick="moveSlide('shampoo', 1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="slider-dot active" onclick="currentSlide('shampoo', 1)"></span>
+                                <span class="slider-dot" onclick="currentSlide('shampoo', 2)"></span>
+                                <span class="slider-dot" onclick="currentSlide('shampoo', 3)"></span>
+                                <span class="slider-dot" onclick="currentSlide('shampoo', 4)"></span>
+                            </div>
+                            <div class="slider-progress" data-progress="shampoo"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4" data-en="Nourishing Shampoo" data-ar="الشامبو">Nourishing Shampoo</h3>
+                        <p class="text-lg text-gray-600 mb-6" data-en="Gently cleanse and strengthen your hair with our nutrient-rich shampoo formula." data-ar="نظف وقوي شعرك بلطف مع تركيبة الشامبو الغنية بالعناصر الغذائية.">
+                            Gently cleanse and strengthen your hair with our nutrient-rich shampoo formula.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="How to Use" data-ar="طريقة الاستخدام">How to Use</h4>
+                                <p class="text-gray-600" data-en="Massage 2–3 pumps into wet hair and scalp. Work into a rich lather, rinse thoroughly. Repeat if needed." data-ar="استعمل 2–3 ضغطات على شعر مبلل، دلك فروة الرأس منيح، اعمل رغوة، واغسل كويس. فيك تعيد حسب الحاجة.">
+                                    Massage 2–3 pumps into wet hair and scalp. Work into a rich lather, rinse thoroughly. Repeat if needed.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="What It Does" data-ar="الفوائد">What It Does</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• Cleanses gently without stripping natural oils" data-ar="• تنظيف لطيف بدون ما يزيل زيوت الشعر الطبيعية">• Cleanses gently without stripping natural oils</li>
+                                    <li data-en="• Strengthens roots and repairs hair fibers" data-ar="• يقوي الجذور ويصلح ألياف الشعر">• Strengthens roots and repairs hair fibers</li>
+                                    <li data-en="• Boosts shine and elasticity" data-ar="• بيعطي لمعة ومرونة طبيعية">• Boosts shine and elasticity</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="Key Ingredients" data-ar="المكونات الرئيسية">Key Ingredients</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• <strong>Aloe Vera:</strong> Hydrates scalp and soothes irritation" data-ar="• <strong>الألوفيرا:</strong> بترطّب الفروة وبتخفف التهيّج">• <strong>Aloe Vera:</strong> Hydrates scalp and soothes irritation</li>
+                                    <li data-en="• <strong>Argan Oil:</strong> Nourishes and protects against dryness" data-ar="• <strong>زيت الأرجان:</strong> بيغذّي الشعر ويحميه من الجفاف">• <strong>Argan Oil:</strong> Nourishes and protects against dryness</li>
+                                    <li data-en="• <strong>Rosemary Oil:</strong> Stimulates scalp circulation and promotes growth" data-ar="• <strong>زيت الروزماري:</strong> بنشّط الدورة الدموية بالفروة وبدعم النمو">• <strong>Rosemary Oil:</strong> Stimulates scalp circulation and promotes growth</li>
+                                    <li data-en="• <strong>Vitamin E & B5:</strong> Support healthy, resilient hair" data-ar="• <strong>فيتامين E + B5:</strong> بيعززوا صحة وقوة الشعر">• <strong>Vitamin E & B5:</strong> Support healthy, resilient hair</li>
+                                    <li data-en="• <strong>Silk Protein:</strong> Improves softness and shine" data-ar="• <strong>بروتين الحرير:</strong> بيضيف نعومة ولمعة">• <strong>Silk Protein:</strong> Improves softness and shine</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conditioner -->
+            <div class="mb-20 fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4" data-en="Hydrating Conditioner" data-ar="البلسم">Hydrating Conditioner</h3>
+                        <p class="text-lg text-gray-600 mb-6" data-en="Deeply moisturize and smooth your hair with our luxurious conditioner blend." data-ar="رطب ونعم شعرك بعمق مع خلطة البلسم الفاخرة.">
+                            Deeply moisturize and smooth your hair with our luxurious conditioner blend.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="How to Use" data-ar="طريقة الاستخدام">How to Use</h4>
+                                <p class="text-gray-600" data-en="After shampoo, apply evenly to mid-lengths and ends. Leave for 2–3 minutes, then rinse well." data-ar="بعد الشامبو، وزع البلسم على منتصف الشعر والأطراف. اتركه 2–3 دقايق، بعدها اغسله كويس.">
+                                    After shampoo, apply evenly to mid-lengths and ends. Leave for 2–3 minutes, then rinse well.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="What It Does" data-ar="الفوائد">What It Does</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• Deeply hydrates and smooths hair" data-ar="• بيرطّب الشعر بعمق">• Deeply hydrates and smooths hair</li>
+                                    <li data-en="• Reduces frizz and breakage" data-ar="• بيقلل الهيشان والتقصّف">• Reduces frizz and breakage</li>
+                                    <li data-en="• Enhances shine and manageability" data-ar="• بيخلي الشعر ناعم، لامع، وسهل التسريح">• Enhances shine and manageability</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="Key Ingredients" data-ar="المكونات الرئيسية">Key Ingredients</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• <strong>Coconut Oil:</strong> Restores moisture and prevents split ends" data-ar="• <strong>زيت جوز الهند:</strong> بيرجع الرطوبة للشعر وبيمنع الأطراف المتقصفة">• <strong>Coconut Oil:</strong> Restores moisture and prevents split ends</li>
+                                    <li data-en="• <strong>Rice Oil:</strong> Strengthens hair and improves elasticity" data-ar="• <strong>زيت الأرز:</strong> بيقوي الشعر وبيعزز مرونته">• <strong>Rice Oil:</strong> Strengthens hair and improves elasticity</li>
+                                    <li data-en="• <strong>Vitamin B5:</strong> Locks in hydration and adds smoothness" data-ar="• <strong>فيتامين B5:</strong> بيحبس الرطوبة وبيعطي نعومة">• <strong>Vitamin B5:</strong> Locks in hydration and adds smoothness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="image-slider" data-slider="conditioner">
+                            <div class="slider-container">
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0003.jpg" alt="Conditioner - View 1">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0004.jpg" alt="Conditioner - View 2">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0001.jpg" alt="Conditioner - View 3">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0005.jpg" alt="Conditioner - View 4">
+                                </div>
+                            </div>
+                            <button class="slider-nav prev" onclick="moveSlide('conditioner', -1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="slider-nav next" onclick="moveSlide('conditioner', 1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="slider-dot active" onclick="currentSlide('conditioner', 1)"></span>
+                                <span class="slider-dot" onclick="currentSlide('conditioner', 2)"></span>
+                                <span class="slider-dot" onclick="currentSlide('conditioner', 3)"></span>
+                                <span class="slider-dot" onclick="currentSlide('conditioner', 4)"></span>
+                            </div>
+                            <div class="slider-progress" data-progress="conditioner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oil Treatment -->
+            <div class="mb-20 fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="image-slider" data-slider="oil">
+                            <div class="slider-container">
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0004.jpg" alt="Oil Treatment - View 1">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0001.jpg" alt="Oil Treatment - View 2">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0006.jpg" alt="Oil Treatment - View 3">
+                                </div>
+                                <div class="slider-slide">
+                                    <img src="imgs/IMG-20250904-WA0007.jpg" alt="Oil Treatment - View 4">
+                                </div>
+                            </div>
+                            <button class="slider-nav prev" onclick="moveSlide('oil', -1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="slider-nav next" onclick="moveSlide('oil', 1)">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="slider-dot active" onclick="currentSlide('oil', 1)"></span>
+                                <span class="slider-dot" onclick="currentSlide('oil', 2)"></span>
+                                <span class="slider-dot" onclick="currentSlide('oil', 3)"></span>
+                                <span class="slider-dot" onclick="currentSlide('oil', 4)"></span>
+                            </div>
+                            <div class="slider-progress" data-progress="oil"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4" data-en="Repair Oil Treatment" data-ar="علاج الزيت">Repair Oil Treatment</h3>
+                        <p class="text-lg text-gray-600 mb-6" data-en="Intensive repair and nourishment for damaged hair with our premium oil blend." data-ar="إصلاح وتغذية مكثفة للشعر التالف مع خلطة الزيوت المميزة.">
+                            Intensive repair and nourishment for damaged hair with our premium oil blend.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="How to Use" data-ar="طريقة الاستخدام">How to Use</h4>
+                                <p class="text-gray-600" data-en="Apply 2–4 drops on damp or dry hair, focusing on the ends. Can be used daily as a leave-in, or overnight for intense repair." data-ar="حط 2–4 نقاط على شعر رطب أو جاف، خاصة على الأطراف. فيك تستخدمه يومياً كـ Leave-in أو تخليه طول الليل لعلاج مكثّف.">
+                                    Apply 2–4 drops on damp or dry hair, focusing on the ends. Can be used daily as a leave-in, or overnight for intense repair.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="What It Does" data-ar="الفوائد">What It Does</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• Repairs damaged and split ends" data-ar="• بيصلح الشعر التالف والأطراف المقصّفة">• Repairs damaged and split ends</li>
+                                    <li data-en="• Smooths frizz and adds shine" data-ar="• بيقلل النفشة وبيعطي لمعة">• Smooths frizz and adds shine</li>
+                                    <li data-en="• Promotes stronger, healthier growth" data-ar="• بدعم نمو شعر أقوى وأصح">• Promotes stronger, healthier growth</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2" data-en="Key Ingredients" data-ar="المكونات الرئيسية">Key Ingredients</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li data-en="• <strong>Argan Oil:</strong> Rich in antioxidants, repairs and softens hair" data-ar="• <strong>زيت الأرجان:</strong> غني بمضادات الأكسدة، بيصلح وبيطرّي الشعر">• <strong>Argan Oil:</strong> Rich in antioxidants, repairs and softens hair</li>
+                                    <li data-en="• <strong>Rosemary Oil:</strong> Stimulates scalp circulation, supports growth" data-ar="• <strong>زيت الروزماري:</strong> بنشّط الفروة وبدعم النمو">• <strong>Rosemary Oil:</strong> Stimulates scalp circulation, supports growth</li>
+                                    <li data-en="• <strong>Jojoba Oil:</strong> Balances scalp oils and adds lightweight moisture" data-ar="• <strong>زيت الجاجوبا:</strong> بيوزن زيوت الفروة وبيعطي ترطيب خفيف">• <strong>Jojoba Oil:</strong> Balances scalp oils and adds lightweight moisture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 fade-in" data-en="About Sea Salt" data-ar="حول سي سولت">About Sea Salt</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in" data-en="We believe in the power of natural ingredients to transform your hair. Our products are crafted with premium botanicals and minerals from the Dead Sea, providing your hair with the nourishment it deserves." data-ar="نؤمن بقوة المكونات الطبيعية لتحويل شعرك. منتجاتنا مصنوعة من النباتات المميزة ومعادن البحر الميت، لتمنح شعرك التغذية اللي يستحقها.">
+                    We believe in the power of natural ingredients to transform your hair. Our products are crafted with premium botanicals and minerals from the Dead Sea, providing your hair with the nourishment it deserves.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-en="Natural Ingredients" data-ar="مكونات طبيعية">Natural Ingredients</h3>
+                    <p class="text-gray-600" data-en="100% natural botanicals and minerals sourced responsibly from around the world." data-ar="نباتات ومعادن طبيعية 100% مصدرها مسؤول من حول العالم.">100% natural botanicals and minerals sourced responsibly from around the world.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-en="Proven Results" data-ar="نتائج مثبتة">Proven Results</h3>
+                    <p class="text-gray-600" data-en="Scientifically formulated products that deliver visible improvements to hair health." data-ar="منتجات مصنعة علمياً تعطي تحسينات واضحة لصحة الشعر.">Scientifically formulated products that deliver visible improvements to hair health.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-en="Sustainable" data-ar="مستدام">Sustainable</h3>
+                    <p class="text-gray-600" data-en="Eco-friendly packaging and sustainable sourcing practices for a better planet." data-ar="تغليف صديق للبيئة وممارسات مصادر مستدامة لكوكب أفضل.">Eco-friendly packaging and sustainable sourcing practices for a better planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   
+
+    <script>
+        // Language Management
+        let currentLanguage = localStorage.getItem('language') || 'en';
+        let autoAdvanceIntervals = {};
+        let progressIntervals = {};
+        
+        // Slider functionality
+        let currentSlides = {
+            spray: 1,
+            shampoo: 1,
+            conditioner: 1,
+            oil: 1
+        };
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            applyLanguage(currentLanguage);
+            initializeSliders();
+            startAutoAdvance();
+        });
+
+        // Language Toggle Function with Animation
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+            applyLanguageWithAnimation(currentLanguage);
+            localStorage.setItem('language', currentLanguage);
+        }
+
+        function applyLanguageWithAnimation(language) {
+            // Show notification
+            showLanguageNotification(language);
+            
+            // Update button text to show the opposite language
+            const enTexts = document.querySelectorAll('.en-text');
+            const arTexts = document.querySelectorAll('.ar-text');
+            
+            // Instant modern language switch - no slow page transitions
+            if (language === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+                
+                // Show EN button (to switch back to English)
+                enTexts.forEach(el => el.classList.add('hidden'));
+                arTexts.forEach(el => el.classList.remove('hidden'));
+                
+                // Instant content update with quick flash effect
+                updateContentInstant('data-ar');
+                
+                // Fix slider navigation for RTL
+                updateSliderNavigation(true);
+                
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'en');
+                
+                // Show AR button (to switch to Arabic)
+                enTexts.forEach(el => el.classList.remove('hidden'));
+                arTexts.forEach(el => el.classList.add('hidden'));
+                
+                // Instant content update with quick flash effect
+                updateContentInstant('data-en');
+                
+                // Reset slider navigation for LTR
+                updateSliderNavigation(false);
+            }
+        }
+
+        function showLanguageNotification(language) {
+            const notification = document.getElementById('languageNotification');
+            const messageElement = document.getElementById('notificationMessage');
+            
+            // Set the message based on language
+            if (language === 'ar') {
+                messageElement.textContent = 'تم التبديل إلى العربية';
+            } else {
+                messageElement.textContent = 'Switched to English';
+            }
+            
+            // Show notification with slide-in animation
+            notification.classList.add('show');
+            
+            // Auto-hide after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        function updateContentInstant(dataAttr) {
+            // Quick flash effect for modern instant update
+            document.querySelectorAll(`[${dataAttr}]`).forEach((element) => {
+                // Quick flash animation
+                element.style.opacity = '0.7';
+                element.style.transform = 'scale(0.98)';
+                element.style.transition = 'all 0.1s ease-out';
+                
+                setTimeout(() => {
+                    // Update content
+                    if (element.innerHTML.includes('<strong>')) {
+                        element.innerHTML = element.getAttribute(dataAttr);
+                    } else {
+                        element.textContent = element.getAttribute(dataAttr);
+                    }
+                    
+                    // Quick bounce back
+                    element.style.opacity = '1';
+                    element.style.transform = 'scale(1)';
+                    
+                    setTimeout(() => {
+                        element.style.transition = '';
+                    }, 100);
+                }, 50);
+            });
+        }
+
+        function updateContentWithAnimation(dataAttr) {
+            document.querySelectorAll(`[${dataAttr}]`).forEach((element, index) => {
+                // Add modern staggered animation
+                setTimeout(() => {
+                    element.style.transition = 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    element.classList.add('language-fade-out');
+                    
+                    setTimeout(() => {
+                        if (element.innerHTML.includes('<strong>')) {
+                            element.innerHTML = element.getAttribute(dataAttr);
+                        } else {
+                            element.textContent = element.getAttribute(dataAttr);
+                        }
+                        
+                        element.classList.remove('language-fade-out');
+                        element.classList.add('language-fade-in');
+                        
+                        // Add modern bounce effect
+                        element.style.transform = 'translateY(0) scale(1)';
+                        
+                        setTimeout(() => {
+                            element.classList.remove('language-fade-in');
+                            element.style.transition = '';
+                        }, 600);
+                    }, 200);
+                }, index * 40); // Slightly increased stagger for better effect
+            });
+        }
+
+        function updateSliderNavigation(isRTL) {
+            document.querySelectorAll('.slider-nav').forEach(nav => {
+                // Quick transition for arrows
+                nav.style.transition = 'all 0.15s ease-out';
+                
+                if (nav.classList.contains('prev')) {
+                    if (isRTL) {
+                        nav.style.left = 'auto';
+                        nav.style.right = '25px';
+                        // Flip the arrow icon for RTL
+                        const svg = nav.querySelector('svg');
+                        if (svg) svg.style.transform = 'scaleX(-1)';
+                    } else {
+                        nav.style.right = 'auto';
+                        nav.style.left = '25px';
+                        // Reset arrow icon for LTR
+                        const svg = nav.querySelector('svg');
+                        if (svg) svg.style.transform = 'scaleX(1)';
+                    }
+                } else if (nav.classList.contains('next')) {
+                    if (isRTL) {
+                        nav.style.right = 'auto';
+                        nav.style.left = '25px';
+                        // Flip the arrow icon for RTL
+                        const svg = nav.querySelector('svg');
+                        if (svg) svg.style.transform = 'scaleX(-1)';
+                    } else {
+                        nav.style.left = 'auto';
+                        nav.style.right = '25px';
+                        // Reset arrow icon for LTR
+                        const svg = nav.querySelector('svg');
+                        if (svg) svg.style.transform = 'scaleX(1)';
+                    }
+                }
+            });
+            
+            // Update all slider containers for RTL support
+            document.querySelectorAll('.image-slider').forEach(slider => {
+                const sliderId = slider.getAttribute('data-slider');
+                // Quick refresh the current slider position
+                setTimeout(() => {
+                    updateSlider(sliderId);
+                }, 50);
+            });
+        }
+
+        function applyLanguage(language) {
+            // Use the animated version
+            applyLanguageWithAnimation(language);
+        }
+
+        // Enhanced Slider Functions with RTL support
+        function moveSlide(sliderId, direction) {
+            const slider = document.querySelector(`[data-slider="${sliderId}"]`);
+            const container = slider.querySelector('.slider-container');
+            const slides = slider.querySelectorAll('.slider-slide');
+            const dots = slider.querySelectorAll('.slider-dot');
+            
+            // Check if RTL and reverse direction
+            const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+            const actualDirection = isRTL ? -direction : direction;
+            
+            // Stop auto-advance temporarily
+            stopAutoAdvance(sliderId);
+            
+            currentSlides[sliderId] += actualDirection;
+            
+            if (currentSlides[sliderId] > slides.length) {
+                currentSlides[sliderId] = 1;
+            }
+            if (currentSlides[sliderId] < 1) {
+                currentSlides[sliderId] = slides.length;
+            }
+            
+            updateSlider(sliderId);
+            
+            // Restart auto-advance after 3 seconds
+            setTimeout(() => {
+                startAutoAdvanceForSlider(sliderId);
+            }, 3000);
+        }
+
+        function currentSlide(sliderId, slideNumber) {
+            stopAutoAdvance(sliderId);
+            currentSlides[sliderId] = slideNumber;
+            updateSlider(sliderId);
+            
+            setTimeout(() => {
+                startAutoAdvanceForSlider(sliderId);
+            }, 3000);
+        }
+
+        function updateSlider(sliderId) {
+            const slider = document.querySelector(`[data-slider="${sliderId}"]`);
+            const container = slider.querySelector('.slider-container');
+            const dots = slider.querySelectorAll('.slider-dot');
+            
+            const translateX = -(currentSlides[sliderId] - 1) * 100;
+            container.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index + 1 === currentSlides[sliderId]) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Auto-advance with progress bar
+        function startAutoAdvance() {
+            Object.keys(currentSlides).forEach(sliderId => {
+                startAutoAdvanceForSlider(sliderId);
+            });
+        }
+
+        function startAutoAdvanceForSlider(sliderId) {
+            stopAutoAdvance(sliderId);
+            
+            let progress = 0;
+            const progressBar = document.querySelector(`[data-progress="${sliderId}"]`);
+            
+            progressIntervals[sliderId] = setInterval(() => {
+                progress += 2;
+                if (progressBar) {
+                    progressBar.style.width = `${progress}%`;
+                }
+                
+                if (progress >= 100) {
+                    progress = 0;
+                    moveSlide(sliderId, 1);
+                }
+            }, 100); // 5 second cycle (100ms * 50 = 5000ms)
+        }
+
+        function stopAutoAdvance(sliderId) {
+            if (autoAdvanceIntervals[sliderId]) {
+                clearInterval(autoAdvanceIntervals[sliderId]);
+            }
+            if (progressIntervals[sliderId]) {
+                clearInterval(progressIntervals[sliderId]);
+            }
+            
+            const progressBar = document.querySelector(`[data-progress="${sliderId}"]`);
+            if (progressBar) {
+                progressBar.style.width = '0%';
+            }
+        }
+
+        // Pause auto-advance when hovering over sliders
+        document.querySelectorAll('.image-slider').forEach(slider => {
+            const sliderId = slider.getAttribute('data-slider');
+            
+            slider.addEventListener('mouseenter', () => {
+                stopAutoAdvance(sliderId);
+            });
+            
+            slider.addEventListener('mouseleave', () => {
+                startAutoAdvanceForSlider(sliderId);
+            });
+        });
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleSwipe(sliderId) {
+            const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+            
+            if (touchEndX < touchStartX - 50) {
+                // Swipe left
+                moveSlide(sliderId, isRTL ? -1 : 1);
+            }
+            if (touchEndX > touchStartX + 50) {
+                // Swipe right
+                moveSlide(sliderId, isRTL ? 1 : -1);
+            }
+        }
+
+        // Add touch events to all sliders
+        document.querySelectorAll('.image-slider').forEach(slider => {
+            const sliderId = slider.getAttribute('data-slider');
+            
+            slider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            slider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe(sliderId);
+            });
+        });
+
+        // Keyboard navigation with RTL support
+        document.addEventListener('keydown', (e) => {
+            const activeSlider = document.querySelector('.image-slider:hover');
+            if (activeSlider) {
+                const sliderId = activeSlider.getAttribute('data-slider');
+                const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                
+                if (e.key === 'ArrowLeft') {
+                    moveSlide(sliderId, isRTL ? 1 : -1);
+                } else if (e.key === 'ArrowRight') {
+                    moveSlide(sliderId, isRTL ? -1 : 1);
+                }
+            }
+        });
+
+        function initializeSliders() {
+            Object.keys(currentSlides).forEach(sliderId => {
+                updateSlider(sliderId);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                console.log('Mobile menu clicked');
+            });
+        }
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Add loading states
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
